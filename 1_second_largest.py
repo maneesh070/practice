@@ -1,11 +1,7 @@
 def sec_largest(arr, n):
-    if n == 0 or n == 1:
-        return -1
     arr.sort()
     for i in range(n):
-        if arr[-1]/arr[n-1-i] == 1:
-            continue
-        else:
+        if arr[-1]/arr[n-1-i] > 1:
             return arr[n-1-i]
     return -1
 
