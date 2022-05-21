@@ -1,6 +1,9 @@
-def longest():
-    for element in names:
-
-names = ['Geeks', 'Geek', 'GeeksforGeeks', 'Geeksfor']
-display = longest(names)
-print(display)
+def longest(names):
+    newNames = ''
+    for i in names:
+        if len(i) > len(newNames):
+            newNames = i
+    return newNames
+names = ['rohit', 'kamal', 'kamalkant', 'qwertyuio']
+displayName = longest(names)
+print(displayName)
